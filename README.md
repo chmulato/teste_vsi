@@ -114,6 +114,8 @@ java -jar target/teste_vsi-1.0-SNAPSHOT.jar
 ```bash
 # Compilar e executar para gerar o PDF com nome datado
 mvn clean compile exec:java -Dexec.mainClass=exercicios.Main
+ou
+mvn clean compile exec:java -D.mainClass=exercicios.Main
 
 # Ou compilar primeiro e depois executar
 mvn clean compile
