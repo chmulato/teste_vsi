@@ -5,6 +5,8 @@ Projeto de teste prático para vaga de Desenvolvedor Java na DSE, contendo solu�
 **Autor:** Christian Vladimir Uhdre Mulato  
 **Data:** 26 de Junho de 2025
 
+---
+
 ## Descrição
 
 Este projeto implementa soluções para o teste prático DSE Java Developer, demonstrando conhecimentos em:
@@ -19,13 +21,17 @@ Este projeto implementa soluções para o teste prático DSE Java Developer, dem
 - Testes unitários
 - Casos de uso e modelagem de sistemas
 
+---
+
 ## Tecnologias Utilizadas
 
-- **Java 8+** - Linguagem principal
-- **Maven** - Gerenciamento de dependências e build
-- **JUnit 4** - Framework de testes unitários
-- **Apache PDFBox** - Geração de documentos PDF
-- **SQL** - Consultas e modelagem de dados
+- **Java 8+** – Linguagem principal
+- **Maven** – Gerenciamento de dependências e build
+- **JUnit 4** – Framework de testes unitários
+- **Apache PDFBox** – Geração de documentos PDF
+- **SQL** – Consultas e modelagem de dados
+
+---
 
 ## Estrutura do Projeto
 
@@ -35,7 +41,7 @@ teste_vsi/
 │   ├── main/java/exercicios/
 │   │   ├── Exercicio01.java    # Geração de anagramas
 │   │   ├── Exercicio02.java    # Sobrescrita equals/hashCode
-│   │   ├── Exercicio03.java    # Padrões de projeto
+│   │   ├── Exercicio03.java    # Padrões de projeto (Adapter)
 │   │   ├── Exercicio04.java    # Exemplos Angular
 │   │   ├── Exercicio05.java    # Prevenção SQL Injection
 │   │   ├── Exercicio06.java    # Otimização de performance
@@ -64,6 +70,8 @@ teste_vsi/
 └── README.md                   # Este arquivo
 ```
 
+---
+
 ## Como Executar
 
 ### Pré-requisitos
@@ -71,7 +79,7 @@ teste_vsi/
 - Java 8 ou superior
 - Maven 3.6 ou superior
 
-### Executando o projeto
+### Compilando e Executando
 
 1. **Clone ou baixe o projeto**
 2. **No diretório raiz, execute:**
@@ -80,10 +88,8 @@ teste_vsi/
 # Compilar o projeto
 mvn clean compile
 
-# Executar todos os exercícios
+# Executar todos os exercícios e gerar o PDF de saída
 mvn exec:java -Dexec.mainClass=exercicios.Main
-ou
-mvn exec:java -D.mainClass=exercicios.Main
 
 # Ou executar diretamente com Java
 java -cp target/classes exercicios.Main
@@ -109,22 +115,19 @@ mvn clean package
 java -jar target/teste_vsi-1.0-SNAPSHOT.jar
 ```
 
-### Gerando o PDF de Saída
+---
 
-```bash
-# Compilar e executar para gerar o PDF com nome datado
-mvn clean compile exec:java -Dexec.mainClass=exercicios.Main
-ou
-mvn clean compile exec:java -D.mainClass=exercicios.Main
+## Geração do Relatório PDF
 
-# Ou compilar primeiro e depois executar
-mvn clean compile
-java -cp target/classes exercicios.Main
+O arquivo PDF é gerado automaticamente na pasta `doc/` sempre que o projeto é executado, com o nome no formato `YYYY_MM_DD_Christian_Mulato_Resultado.pdf` (exemplo: `2025_06_26_Christian_Mulato_Resultado.pdf`). Este PDF contém:
 
-# O arquivo será gerado na pasta doc/ com nome: YYYY_MM_DD_Christian_Mulato_Resultado.pdf
-```
+- Saídas de todos os 9 exercícios
+- Resultados formatados e organizados
+- Demonstrações práticas de cada solução
 
-**Nota:** A execução do projeto automaticamente gera o arquivo PDF na pasta `doc/` com o nome no formato `YYYY_MM_DD_Christian_Mulato_Resultado.pdf` (exemplo: `2025_06_26_Christian_Mulato_Resultado.pdf`) contendo o relatório com as saídas de todos os exercícios.
+Para regenerar o PDF, basta executar o projeto novamente com qualquer um dos comandos de execução acima.
+
+---
 
 ## Exercícios Implementados
 
@@ -132,55 +135,48 @@ java -cp target/classes exercicios.Main
 
 - Algoritmo recursivo para gerar todos os anagramas de letras distintas
 - Validação de entrada e tratamento de casos especiais
-- Otimizado para clareza e reutilização
 
 ### 2. **Sobrescrita de equals() e hashCode()**
 
 - Implementação correta dos métodos em classe Pessoa
 - Demonstração de contratos e boas práticas
-- Exemplos práticos de uso
 
 ### 3. **Padrões de Projeto**
 
-- Implementação do padrão Adapter para desacoplamento
-- Exemplo prático com bibliotecas de terceiros
-- Demonstração de flexibilidade e manutenibilidade
+- Implementação do padrão Adapter para desacoplamento de bibliotecas de terceiros
+- Exemplo prático e análise de vantagens/limitações
 
 ### 4. **Experiência com Angular**
 
 - Exemplos de componentes, services e routing
 - Boas práticas de desenvolvimento frontend
-- Integração com APIs REST
 
 ### 5. **Prevenção de SQL Injection**
 
 - Técnicas de sanitização de dados
 - Uso de PreparedStatements
-- Validação de entrada e escape de caracteres
 
 ### 6. **Otimização de Performance**
 
 - Análise de gargalos em processos batch
 - Estratégias de otimização de FTP
-- Monitoramento e métricas
 
 ### 7. **Consultas SQL**
 
 - Queries complexas com JOINs
 - Otimização de consultas
-- Análise de dados relacionais
 
 ### 8. **Caso de Uso - Sistema XYZ**
 
 - Modelagem de cadastro de plantas
 - Regras de negócio e validações
-- Arquitetura orientada a domínio
 
 ### 9. **Estratégia de Testes**
 
 - Plano de testes para cadastro de usuários
 - Testes unitários, integração e aceitação
-- Cobertura de código e qualidade
+
+---
 
 ## Testes
 
@@ -193,22 +189,16 @@ O projeto inclui testes unitários completos para todos os exercícios:
 
 Execute `mvn test` para ver todos os testes passando.
 
+---
+
 ## Documentação
 
 A documentação completa do teste está disponível em:
 
-- `doc/dse_test_java_developer.md` - Enunciado original
-- `doc/YYYY_MM_DD_Christian_Mulato_Resultado.pdf` - Relatório de saída gerado automaticamente
+- `doc/dse_test_java_developer.md` – Enunciado original
+- `doc/YYYY_MM_DD_Christian_Mulato_Resultado.pdf` – Relatório de saída gerado automaticamente
 
-### Geração do Relatório PDF
-
-O arquivo PDF é gerado automaticamente na pasta `doc/` sempre que o projeto é executado, com o nome no formato `YYYY_MM_DD_Christian_Mulato_Resultado.pdf` (exemplo: `2025_06_26_Christian_Mulato_Resultado.pdf`). Este PDF contém:
-
-- Saídas de todos os 9 exercícios
-- Resultados formatados e organizados
-- Demonstrações práticas de cada solução
-
-Para regenerar o PDF, basta executar o projeto novamente com qualquer um dos comandos de execução mencionados acima.
+---
 
 ## Configuração do Ambiente
 
@@ -237,15 +227,20 @@ Para regenerar o PDF, basta executar o projeto novamente com qualquer um dos com
 - **Encoding:** UTF-8
 - **Main Class:** exercicios.Main
 
+---
+
 ## Contribuição
 
-Este é um projeto de teste individual, mas sugestões e melhorias são bem-vindas.
+Este é um projeto de teste individual desenvolvido para avaliação técnica.  
+Sugestões e melhorias são bem-vindas via issues ou pull requests.
+
+---
 
 ## Licença
 
-Projeto desenvolvido para fins educacionais e de avaliação técnica.
+Projeto desenvolvido exclusivamente para fins educacionais e de avaliação técnica profissional.
 
 ---
 
 **Contato:** Christian Vladimir Uhdre Mulato  
-**Data de Desenvolvimento:** 26 de Junho de 2025
+**Data de Desenvolvimento:** 26 de Junho de 2025.
