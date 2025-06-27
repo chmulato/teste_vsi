@@ -1,6 +1,6 @@
-# Teste Java Developer - DSE
+# Teste Java Developer - VSI
 
-Projeto de teste prático para vaga de Desenvolvedor Java na DSE, contendo soluções para 9 exercícios que abrangem diferentes aspectos do desenvolvimento Java.
+Projeto de teste prático para vaga de Desenvolvedor Java na VSI, contendo soluções para 9 exercícios que abrangem diferentes aspectos do desenvolvimento Java.
 
 **Autor:** Christian Vladimir Uhdre Mulato  
 **Data:** 26 de Junho de 2025
