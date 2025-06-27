@@ -49,7 +49,7 @@ teste_vsi/
 │   │   ├── Exercicio08.java    # Caso de uso - Sistema XYZ
 │   │   ├── Exercicio09.java    # Estratégia de testes
 │   │   └── Main.java           # Classe principal
-│   └── test/exercicios/        # Testes unitários
+│   └── test/java/exercicios/       # Testes unitários
 │       ├── Exercicio01Test.java    # Testes para geração de anagramas
 │       ├── Exercicio02Test.java    # Testes para equals/hashCode
 │       ├── Exercicio03Test.java    # Testes para padrões de projeto
@@ -90,6 +90,8 @@ mvn clean compile
 
 # Executar todos os exercícios e gerar o PDF de saída
 mvn exec:java -Dexec.mainClass=exercicios.Main
+ou
+mvn exec:java -D.mainClass=exercicios.Main
 
 # Ou executar diretamente com Java
 java -cp target/classes exercicios.Main

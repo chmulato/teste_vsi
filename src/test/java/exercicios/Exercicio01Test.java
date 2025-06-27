@@ -12,11 +12,10 @@
  * Data: 26 de Junho de 2025
  */
 
-package src.test.exercicios;
+package exercicios;
 
 import org.junit.Test;
 import org.junit.Assert;
-import exercicios.Exercicio01;
 import java.util.*;
 
 /**

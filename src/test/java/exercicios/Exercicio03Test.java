@@ -1,4 +1,4 @@
-package src.test.exercicios;
+package exercicios;
 
 import org.junit.Test;
 import org.junit.Before;
@@ -6,7 +6,6 @@ import static org.junit.Assert.*;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import exercicios.Exercicio03;
 import exercicios.Exercicio03.LoggerService;
 import exercicios.Exercicio03.Log4jAdapter;
 import exercicios.Exercicio03.SLF4JAdapter;

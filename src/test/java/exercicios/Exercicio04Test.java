@@ -8,10 +8,9 @@
  * - Se o método main executa sem lançar exceções.
  * - Se a saída impressa contém as seções esperadas sobre Angular e comunicação entre componentes.
  */
-package src.test.exercicios;
+package exercicios;
 
 import org.junit.Test;
-import exercicios.Exercicio04;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

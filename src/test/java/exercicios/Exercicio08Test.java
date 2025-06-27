@@ -9,10 +9,9 @@
  * Autor: Christian Vladimir Uhdre Mulato
  * Data: 26 de Junho de 2025
  */
-package src.test.exercicios;
+package exercicios;
 
 import org.junit.Test;
-import exercicios.Exercicio08;
 
 public class Exercicio08Test {
 
